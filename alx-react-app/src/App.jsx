@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import WelcomeMessage from './components/WelcomeMessage.jsx'
 import UserProfile from './components/UserProfile.jsx'
+import Header from './components/Header.jsx'
+import MainContent from './components/MainContent.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,7 +35,12 @@ function App() {
       </p>
       
       <WelcomeMessage />
-      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+      <Header />
+      <MainContent />
+      
+
+            <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
+<Footer />
     </>
   )
 }
